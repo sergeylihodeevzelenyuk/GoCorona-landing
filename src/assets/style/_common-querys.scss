@@ -1,0 +1,81 @@
+body {
+  background-color: $MAIN_WHITE;
+}
+
+.layout {
+  background-color: $MAIN_BG;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  border: none;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.main-btn {
+  width: 144px;
+  height: 40px;
+  background-color: $MAIN_RED;
+  border: none;
+  border-radius: 5px;
+}
+
+.heading {
+  margin-bottom: 12px;
+}
+
+.text {
+  margin-bottom: 24px;
+  max-width: 375px;
+}
+
+.art {
+  &__square-size-xl,
+  &__square-size-l,
+  &__square-size-xm,
+  &__square-size-m,
+  &__square-size-s {
+    position: absolute;
+    background-color: $MAIN_RED;
+    border-radius: 30px;
+  }
+
+  &__square-size-xl {
+    width: 147px;
+    height: 147px;
+  }
+
+  // size-l
+  &__square-size-l {
+    width: 127px;
+    height: 127px;
+  }
+
+  &__square-size-m {
+    width: 97px;
+    height: 97px;
+  }
+
+  &__square-size-xm {
+    width: 77px;
+    height: 77px;
+  }
+
+  &__square-size-s {
+    width: 66px;
+    height: 66px;
+    border-radius: 16px;
+  }
+}

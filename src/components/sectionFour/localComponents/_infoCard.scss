@@ -1,0 +1,31 @@
+.infoCard {
+  position: relative;
+  z-index: 1;
+  background-color: $MAIN_WHITE;
+  padding: 36px 16px;
+  box-shadow: 0px 4px 18px $SHADOW_LIGHT_BLUE_V1;
+  border-radius: 8px;
+  text-align: center;
+
+  &__heading {
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+  }
+
+  &__img-wrapper {
+    margin-bottom: 58px;
+  }
+}
+
+@media #{$phone-smallest-media-query} {
+  .infoCard {
+    padding: 24px 16px;
+
+    &__img-wrapper {
+      margin-bottom: 34px;
+    }
+  }
+}

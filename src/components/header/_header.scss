@@ -1,0 +1,88 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 3.7% 0 4.5%;
+  z-index: 1;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 67%;
+  }
+
+  &__nav {
+    padding: 0 0 4px;
+
+    & a {
+      margin-left: 40px;
+
+      &:hover {
+        color: $MAIN_RED;
+      }
+    }
+  }
+
+  &__btn {
+    width: 130px;
+    height: 40px;
+    background-color: $BLUE;
+    border-radius: 5px;
+  }
+}
+
+@media #{$desktop-smallest-media-query} {
+  .header__nav a {
+    margin: 0 15px;
+  }
+}
+
+@media #{$desktop-smallest-additional-media-query} {
+  .header__menu {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media #{$tablet-media-query} {
+  .header__nav a {
+    margin: 0 10px;
+  }
+  .header__btn {
+    width: 18%;
+  }
+}
+
+@media #{$phone-media-query} {
+  .header {
+    padding: 24px 40px 0;
+    margin-bottom: 24px;
+
+    &__menu {
+      width: 100%;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px 0 0px;
+
+      & a {
+        margin: 0;
+      }
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}
+
+@media #{$phone-smallest-media-query} {
+  .header {
+    padding: 24px 20px 0;
+  }
+}

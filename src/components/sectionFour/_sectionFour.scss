@@ -1,0 +1,140 @@
+@import "./localComponents/_infoCard.scss";
+
+.section-four {
+  padding: 80px 0 0;
+  background-color: $MAIN_WHITE;
+
+  &__main-container {
+    width: 67%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    max-width: 600px;
+    margin: 0 auto 3px;
+  }
+
+  &__art-container {
+    position: relative;
+    box-sizing: border-box;
+    padding: 46px 0;
+    width: 90%;
+    min-height: 370px;
+    margin: 0 auto;
+  }
+
+  &__infoCard-wrapper {
+    width: 27%;
+  }
+}
+
+.section-four-art {
+  &__content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__square-one {
+    right: 30%;
+    bottom: 11px;
+    transform: rotate(30deg);
+  }
+
+  &__square-two {
+    top: 77px;
+    left: 25.5%;
+    transform: rotate(105deg);
+  }
+
+  &__square-three {
+    top: 5px;
+    right: 5px;
+    transform: rotate(-30deg);
+  }
+
+  &__square-foure {
+    left: 5px;
+    bottom: 5px;
+    transform: rotate(-30deg);
+  }
+}
+
+@media #{$desktop-smallest-media-query} {
+  .section-four__infoCard-wrapper {
+    width: 30%;
+  }
+}
+
+@media #{$tablet-media-query} {
+  .section-four {
+    padding: 34px 0 0;
+
+    &__text {
+      margin-bottom: 34px;
+    }
+
+  }
+
+  .section-four-art {
+    width: 60%;
+    padding: 24px 0 0;
+
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__square-one {
+      right: 17px;
+      bottom: 240px;
+    }
+
+    &__square-two {
+      top: 280px;
+      left: 18px;
+    }
+
+    &__square-three {
+      top: -5px;
+      right: 18px;
+    }
+
+    &__square-foure {
+      left: 15px;
+      bottom: -6px;
+    }
+  }
+  .section-four__infoCard-wrapper {
+    width: 70%;
+    margin-bottom: 24px;
+  }
+}
+
+@media #{$phone-media-query} {
+  .section-four-art {
+    width: 80%;
+  }
+
+  .section-four__infoCard-wrapper {
+    width: 80%;
+  }
+}
+
+@media #{$phone-smallest-media-query} {
+  .section-four {
+    padding: 24px 0 0;
+
+    &__infoCard-wrapper {
+      width: 70%;
+    }
+  }
+
+  .section-four-art {
+    width: 100%;
+  }
+}

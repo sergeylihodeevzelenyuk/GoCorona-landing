@@ -1,0 +1,20 @@
+$MAIN_WHITE: #ffffff;
+$MAIN_BLACK: #000000;
+$MAIN_BG: #fafbfd;
+$MAIN_RED: #ec5863;
+$BLUE: #4285f4;
+$SHADOW_LIGHT_BLUE: rgba(88, 126, 236, 0.15);
+$SHADOW_LIGHT_BLUE_V1: rgba(88, 126, 236, 0.18);
+$FONT_GRAY: #616161;
+$FONT_LIGHT_GRAY: #b0b0b0;
+$BG_GRAY_OPACITY: rgba(240, 240, 240, 0.49);
+
+$INLINE_SVG_BTN_PLAY: "data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='14' viewBox='0 0 12 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.833336 1.51517L10.3333 7L0.833335 12.4848L0.833336 1.51517Z' stroke='%234285F4'/%3e%3c/svg%3e";
+
+$INLINE_SVG_BTN_PLAY_WHITE: "data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='14' viewBox='0 0 12 14' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.833336 1.51517L10.3333 7L0.833335 12.4848L0.833336 1.51517Z' stroke='%23ffffff'/%3e%3c/svg%3e";
+
+$desktop-smallest-media-query: "only screen and (max-width : 1024px)";
+$desktop-smallest-additional-media-query: "only screen and (max-width : 840px)";
+$tablet-media-query: "only screen and (max-width : 750px)";
+$phone-media-query: "only screen and (max-width : 541px)";
+$phone-smallest-media-query: "only screen and (max-width : 374px)";

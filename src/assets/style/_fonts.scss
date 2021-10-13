@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+.layout {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+}
+
+.nav a,
+.btn {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.14em;
+  color: $MAIN_BLACK;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-weight: 800;
+  color: $MAIN_WHITE;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 55px;
+  color: $MAIN_BLACK;
+}
+
+.section-one__heading,
+.section-three__heading {
+  & span {
+    color: $BLUE;
+  }
+}
+
+.section-two__heading,
+.section-four__heading {
+  & span {
+    color: $MAIN_RED;
+  }
+}
+
+.sub-heading {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  color: $FONT_LIGHT_GRAY;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  color: $FONT_GRAY;
+}
+
+.small-text {
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0.165em;
+  color: $MAIN_BLACK;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.14em;
+  color: $MAIN_RED;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.37em;
+  color: $MAIN_BLACK;
+  text-transform: uppercase;
+}
+
+@media #{$desktop-smallest-additional-media-query} {
+  .heading {
+    font-size: 38px;
+    line-height: 52px;
+  }
+}
+
+
+@media #{$tablet-media-query} {
+  .heading {
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+  }
+
+  .subtitle {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.3em;
+  }
+}
+
+.infoCard__heading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.08em;
+}
